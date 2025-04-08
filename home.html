@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="carousel.css" />
+    <title>PortFolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#inicio" class="header-text">INÍCIO</a>
+        <a href="#projetos" class="header-text">PROJETOS</a>
+        <a href="#habilidades" class="header-text">HABILIDADES</a>
+        <a href="#contatos" class="header-text">CONTATOS</a>
+    </header>
+
+    <!-- Seção Início -->
+    <section id="inicio" class="section-about">
+        <div class="section-about-div">
+            <h1 class="section-about-title">OLÁ, SEJA BEM-VINDO</h1>
+            <p class="section-about-subtitle">
+                Somos programadores apaixonados por transformar ideias em soluções digitais.<br>
+                Com experiência em diversas tecnologias, buscando sempre inovar e entregar projetos de alta qualidade.
+            </p>
+        </div>
+    </section>
+
+    <div style="background-color: #eeeeee;"> <!-- Curva -->
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path d="M0,150 C480,100 960,100 1440,150 L1440,0 L0,0 Z" fill="#000" />
+        </svg>
+    </div>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section-projects">
+        <h1 class="section-projects-title">PROJETOS</h1>
+        <p class="section-projects-subtitle">Aqui você encontrará alguns dos projetos pessoais e de clientes que
+            criamos,<br>
+            cada projeto contendo seu próprio estudo de caso.
+        </p>
+
+
+        <!-- Projeto -->
+        <div class="project">
+            <div class="carousel-container">
+                <button class="prev" onclick="mudarImagem(-1, this)">&#10094;</button>
+                <div class="carousel">
+                    <img src="assets/projeto/img1.png" alt="Imagem 1" class="carousel-image">
+                    <img src="assets/projeto/img2.png" alt="Imagem 2" class="carousel-image">
+                    <img src="assets/projeto/img3.png" alt="Imagem 3" class="carousel-image">
+                    <img src="assets/projeto/img4.png" alt="Imagem 4" class="carousel-image">
+                    <img src="assets/projeto/img5.png" alt="Imagem 5" class="carousel-image">
+                    <img src="assets/projeto/img6.png" alt="Imagem 6" class="carousel-image">
+                </div>
+                <button class="next" onclick="mudarImagem(1, this)">&#10095;</button>
+            </div>
+
+            <div class="project-details">
+                <h2 class="project-details-title">Painel de Controle Logístico</h2>
+                <p class="project-details-tecnology">Tecnologias: ReactJs</p>
+                <p class="project-details-description">
+                    Painel de Controle Logístico é um sistema para gestão de entradas e movimentação de mercadorias.
+                    Permite o controle de notas fiscais, pedidos de compra, romaneios e ações sobre itens de estoque,
+                    como perdas, inventário e solicitações.
+                    Ideal para organizar e centralizar processos logísticos de forma prática e eficiente.
+                </p>
+            
+                <div class="project-details-footer">
+                    <a href="https://github.com/NucleoAM/Painel-de-Controle-Logistico" target="_blank" class="project-details-button">Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------->
+
+
+    <div style="background-color: #eeeeee; margin-bottom: -5px;"> <!-- Curva -->
+        <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+            <path d="M0,0 C480,50 960,50 1440,0 L1440,150 L0,150 Z" fill="#000" />
+        </svg>
+    </div>
+
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="section-skills">
+        <h1 class="section-skills-title">HABILIDADES</h1>
+
+        <div class="skills-list">
+            <div class="skill">
+                <img class="skill-image" src="assets/skills/react.png" alt="ReactJs">
+                <h1 class="skill-title">ReactJS</h1>
+            </div>
+
+            <div class="skill">
+                <img class="skill-image" src="assets/skills/node.png" alt="Node">
+                <h1 class="skill-title">Node.js</h1>
+            </div>
+
+            <div class="skill">
+                <img class="skill-image" src="assets/skills/python.png" alt="Python">
+                <h1 class="skill-title">Python</h1>
+            </div>
+
+            <div class="skill">
+                <img class="skill-image" src="assets/skills/javascript.png" alt="Javascript">
+                <h1 class="skill-title">Javascript</h1>
+            </div>
+        </div>
+    </section>
+
+    <div style="background-color: #000; margin: 0; padding: 0;"> <!-- Curva para baixo -->
+        <svg viewBox="0 0 1440 50" preserveAspectRatio="none"
+            style="display: block; width: 100%; height: 50px; margin: 0;">
+            <path d="M0,0 C480,50 960,50 1440,0 L1440,50 L0,50 Z" fill="#eee" />
+        </svg>
+    </div>
+
+    <!-- Seção Contatos -->
+    <section id="contatos" class="section-contacts">
+        <a href="https://wa.me/+5541997771044" target="_blank">
+            <img src="assets/icons/whats.png" alt="WhatsApp" class="icon">
+        </a>
+        <a href="mailto:nucleo.am25@gmail.com" target="_blank">
+            <img src="assets/icons/gmail.png" alt="Gmail" class="icon">
+        </a>
+        <a href="https://github.com/NucleoAM" target="_blank">
+            <img src="assets/icons/git.png" alt="GitHub" class="icon">
+        </a>
+    </section>
+
+    <footer class="footer">
+        © 2025 Mateus Rumão - Todos os direitos reservados
+    </footer>
+
+    <script>
+        function mudarImagem(direcao, button) {
+            const carousel = button.closest('.carousel-container').querySelector('.carousel')
+            const imagens = carousel.querySelectorAll('.carousel-image')
+            let indexImagem = parseInt(carousel.getAttribute('data-index')) || 0
+
+            const totalImagens = imagens.length
+            indexImagem = (indexImagem + direcao + totalImagens) % totalImagens
+
+            carousel.setAttribute('data-index', indexImagem)
+
+            carousel.style.transform = `translateX(-${indexImagem * 100}%)`
+        }
+    </script>
+</body>
+
+</html>
